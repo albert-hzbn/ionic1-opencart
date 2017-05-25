@@ -1,0 +1,33 @@
+<ion-view view-title="{{arrCategories.name}}">
+    <ion-nav-title>
+        <span>FYNkart</span>
+        <a href="#/app/cart"><i class="fa fa-shopping-cart"></i><sup class="cart-quantity">{{cartQuantity}}</sup></a>
+    </ion-nav-title>
+    <ion-content>
+        <div class="coupon-list" ng-repeat="c in coupon">
+            <a href="#/app/coupon_description">
+                <div class="coupon">
+                    <div class="coupon-name">
+                        {{c.name}}
+                    </div>
+                    <div class="coupon-details">
+                        <span>Coupon code : </span>{{c.code}}
+                    </div>
+                    <span class="coupon-details" ng-if="c.type=='F'">
+                        Discount amount : &#8377;
+                    </span>
+                    <span class="coupon-details" ng-if="c.type=='P'">
+                        Percentage discount : 
+                    </span> {{c.discount| number : 2}}
+                    <span ng-if="c.type=='P'">
+                        %
+                    </span>
+
+                    <div class="total">
+                        <span>Minimum Order : </span> &#8377; {{c.total| number : 2}}
+                    </div>
+                </div>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

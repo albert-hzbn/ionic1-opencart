@@ -1,0 +1,519 @@
+/* Empty. Add your own CSS if you like */
+
+#grocery {
+    display: none;
+}
+
+.list li {
+    background-color: #00ac70;
+    color: white;
+    padding-left: 5px;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+.product {
+    border: solid 1px rgb(0, 108, 87);
+    width: 100%;
+}
+
+.categories {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 1px;
+    min-height: 50px;
+    transition: all 0.5s;
+}
+
+.categories:focus {
+    background-color: #004532;
+    color: white;
+}
+
+.heading-categories,
+.heading-products {
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.image-loader-container {
+    margin: 9px;
+    max-width: 81px;
+    max-height: 81px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.category-product-name {
+    font-size: 16px;
+    padding-bottom: 5px;
+    white-space: normal;
+}
+
+.image-loader-container {
+    display: none;
+}
+
+.category-product-price,
+.category-product-dprice {
+    font-size: 15px;
+}
+
+.category-product-image {
+    width: 120px;
+    height: 120px;
+}
+
+.product-image {
+    width: 80%;
+    height: 80%;
+}
+
+.btn-cart {
+    width: 100%;
+    border-top-width: 5px;
+}
+
+.btn-cart span {
+    color: white;
+}
+
+.cart-quantity {
+    padding-left: 5px;
+}
+
+.total-nshipping {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.grand-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-plus,
+.btn-minus {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(0, 65, 53);
+    color: white;
+    border-radius: 0px;
+    border-radius: 15px;
+}
+
+.quantity {
+    font-weight: bold;
+}
+
+.backdrop {
+    background-color: white;
+}
+
+.loggedinuser {
+    height: 60px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.loggedinuser a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.btn-home {
+    text-align: center;
+    background-color: #00a7ad !important;
+    color: white !important;
+    margin-top: 10px;
+    border: 0px;
+    border-bottom: solid rgba(0, 0, 0, 0.21) 5px !important;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: all 0.3s;
+}
+
+.btn-home:focus {
+    border-bottom: 2px;
+}
+
+.placed-order-content {
+    margin-top: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+}
+
+.featured-box {
+    text-align: center;
+    background-color: rgba(0, 179, 152, 0.35);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+i.icon.ion-record {
+    display: none;
+}
+
+.featured-heading {
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #009881;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-categories {
+    text-align: left;
+    height: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    background-color: rgba(0, 179, 152, 0.23);
+    border: solid 1px white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-categories {
+    //background-color: #009881;
+    background-color: #98083c;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50%;
+}
+
+.empty-cart-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.item-complex .item-content,
+.item-radio .item-content {
+    white-space: normal !important;
+}
+
+input[type="text"].coupon-input {
+    border: solid 1px black;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
+
+.coupon-message {
+    font-size: 20px;
+    color: #00a1a2;
+    font-weight: 700;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.amt-message {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 15px 5px 15px;
+}
+
+.apply-coupon-heading {
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.not-registered {
+    margin: 25%;
+}
+
+.item-input {
+    margin: 5px;
+}
+
+.popup-body {
+    text-align: center;
+}
+
+.categories-list a {
+    padding-left: 5px;
+}
+
+.categories-list a:before {
+    content: "\2022";
+}
+
+.icon-left:before {
+    padding: 10px;
+    background-color: #860030;
+    //background-color: #00646d;
+    border-radius: 6px;
+    color: white;
+    float: left;
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+a.icon-left {
+    color: #444444 !important;
+}
+
+.terms-condition-content,
+.terms-condition-subheading {
+    margin: 15px;
+    text-align: justify;
+}
+
+.terms-condition-subheading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.terms-condition-content>ol>li,
+.faq-content>ol>li {
+    list-style: decimal;
+}
+
+.faq-content>ol>li {
+    margin-bottom: 10px;
+}
+
+.faq-content {
+    text-align: justify;
+    margin: 15px;
+}
+
+.faq-question {
+    font-weight: 600;
+}
+
+.about-content {
+    margin: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.about-section {
+    margin-top: 10px;
+}
+
+.home-categories-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.48);
+    color: black;
+    padding: 5px;
+}
+
+.home-categories-name {
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+}
+
+.coupon {
+    background-color: rgb(0, 160, 100);
+    box-shadow: 0px 8px 20px 0px;
+    color: black;
+    padding: 5px;
+}
+
+.coupon-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.coupon-list {
+    margin: 8px;
+}
+
+.coupon-offer {
+    background-color: #76a2d1;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0px 6px 13px 0px;
+    color: rgba(0, 0, 0, 0.41);
+}
+
+.coupon-offer-details {
+    position: relative;
+    text-align: center;
+    top: 30px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+ion-header-bar {
+    //background: rgba(0, 140, 102, 0.92) !important;
+    background: rgb(191, 0, 69) !important;
+}
+
+.ion-navicon:before {
+    color: white;
+}
+
+.bar .title a {
+    float: right;
+    color: white !important;
+}
+
+.bar.bar-stable .title {
+    color: #fff;
+}
+
+span.nav-bar-title,
+span.back-text,
+i.icon.ion-ios-arrow-back {
+    color: white;
+}
+
+.home-banner-box {
+    width: 100%;
+}
+
+.home-banner-img {
+    width: 100%;
+}
+
+i.icon.ion-android-arrow-back {
+    color: white;
+}
+
+.button.button-balanced {
+    background-color: #a2003b;
+    box-shadow: 4px 4px 8px 0px;
+    color: black;
+}
+
+.button.button-balanced.activated {
+    background-color: #a2003b !important;
+    position: relative;
+    top: 5px;
+    border: 0px;
+    box-shadow: 0px 0px;
+}
+
+.button.button-positive {
+    background-color: #880f43;
+}
+
+.cart-product {
+    white-space: normal;
+}
+
+.cart-item {
+    font-size: 14px;
+}
+
+.order-history-heading {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: dashed 1px black;
+}
+
+.order-history-heading {
+    margin: 5px;
+}
+
+.order-history-details {
+    border: solid 2px black;
+}
+
+.order-history-details td {
+    text-align: left;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ion-item.order-history-details.item:active,
+ion-item.order-history-details.item:focus {
+    background-color: #efefef;
+    position: relative;
+    top: 10px;
+}
+
+.order-history-heading-current {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: dashed 1px black;
+    margin-left: 5px;
+}
+
+.order-history-heading td {
+    padding: 5px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.order-history-details-current td {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.current-order-id {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.current-order-statusid {
+    margin-left: 5px;
+}
+
+.order-history-header {
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

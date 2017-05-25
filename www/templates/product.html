@@ -1,0 +1,21 @@
+<ion-view view-title="{{arrCategories.name}}" ng-init="flastproduct()">
+    <ion-nav-title>
+        <span>FYNkart</span>
+        <a href="#/app/cart"><i class="fa fa-shopping-cart"></i><sup class="cart-quantity">{{cartQuantity}}</sup></a>
+    </ion-nav-title>
+    <ion-content lazy-scroll>
+        <div class="product">
+            <div class="category-product-name">{{productdetails.name}}</div>
+            <img src="img/ripple.gif" image-lazy-src="http://fynkart.com/image/{{ productdetails.image }}" image-lazy-loader="android" image-lazy-distance-from-bottom-to-load="-200" class="product-image">
+
+            <div class="category-product-price" ng-if="productdetails.price!=productdetails.dprice">
+                <strike>&#8377;{{productdetails.price| number : 2}}</strike>
+            </div>
+            <div class="category-product-dprice">
+                Price:&#8377;{{productdetails.dprice| number : 2}}
+            </div>
+        </div>
+
+        <button class="button button-balanced btn-cart" ng-click="addToCart(productdetails)">Add to cart</button>
+    </ion-content>
+</ion-view>

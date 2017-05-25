@@ -1,0 +1,22 @@
+<ion-view view-title="" ng-init="">
+    <ion-nav-title>
+
+    </ion-nav-title>
+    <ion-content>
+        <span class="text-center"><span class="apply-coupon-heading">Apply Coupon</span></span>
+        <div class="row">
+            <div class="col col-60">
+                <input type="text" class="coupon-input" ng-model="coupon_code" placeholder="">
+            </div>
+            <div class="col col-40">
+                <button class="button button-balanced btn-cart" ng-click="addCoupon(coupon_code)">Add Coupon</button>
+            </div>
+        </div>
+
+        <div class="coupon-message">{{couponmessage}}</div>
+        <div class="amt-message">Amount before coupon: &#8377;{{total}}</div>
+        <div class="amt-message">Coupon discount &#8377;{{total-aftercoupon}}</div>
+        <div class="amt-message">Amount to pay: &#8377;{{aftercoupon}}</div>
+        <button ng-click="customerinfoaddress()" class="button button-balanced btn-cart"  >Next</button>
+    </ion-content>
+</ion-view>

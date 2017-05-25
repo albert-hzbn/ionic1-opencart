@@ -1,0 +1,62 @@
+<ion-view view-title="{{arrParentCategories.name}}">
+    <ion-nav-title>
+        <span>FYNkart</span>
+        <a href="#/app/cart"><i class="fa fa-shopping-cart"></i><sup class="cart-quantity">{{cartQuantity}}</sup></a>
+    </ion-nav-title>
+    <ion-content lazy-scroll>
+
+        <!-- <div class="featured-heading">Featured products</div>
+        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+            <ion-slide ng-repeat="product in featuredproducts">
+                <div class="featured-box">
+                    <div class="category-product-name">{{product.name}}</div>
+                    <img src="img/ripple.gif" image-lazy-src="http://fynkart.com/image/{{ product.image }}" image-lazy-loader="android" image-lazy-distance-from-bottom-to-load="-100" class="category-product-image" width="150" height="150">
+
+                    <div class="category-product-price" ng-if="product.price!=product.dprice">
+                        <strike>&#8377;{{product.price| number : 2}}</strike>
+                    </div>
+                    <div class="category-product-dprice">
+                        Price:&#8377;{{product.dprice| number : 2}}
+                    </div>
+                    <div class="row">
+                        <button ion-button class="button button-balanced btn-cart" ng-click="addToCart(product)">Add to cart</button>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slide-box>-->
+
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" active-slide="currentIndex">
+            <ion-slide ng-repeat="bannerdetails in banner">
+                <a href="#" class="home-banner-box">
+                    <img src="http://fynkart.com/image/{{bannerdetails.image}}" class="home-banner-img">
+                </a>
+            </ion-slide>
+        </ion-slide-box>
+
+
+
+        <div class="coupon-offer text-center">
+            <a href="#/app/coupon_description">
+                <div class="row">
+                    <div class="col col-60">
+                        <span class="coupon-offer-details">Coupons</span>
+                    </div>
+                    <div class="col col-40">
+                        <img src="img/coupon_tag.png" height="80">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="heading-categories">Categories</div>
+        <a href="#/app/products" ng-repeat="subCategory in arrParentCategories" ng-click="subCategories(subCategory)">
+            <div class="home-categories" ng-style="{'background-image':'url(http://fynkart.com/image{{subCategory.image}}'}">
+                <div class="home-categories-overlay">
+                    <div class="home-categories-name">{{subCategory.name}}</div>
+                </div>
+            </div>
+        </a>
+
+    </ion-content>
+</ion-view>

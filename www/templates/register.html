@@ -1,0 +1,42 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Register</h1>
+       
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="registerUser(register)">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" ng-model="register.firstname" placeholder="Firstname">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="register.lastname" placeholder="Lastname">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="register.email" placeholder="email">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="register.telephone" placeholder="Phone No.">
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="register.password1" placeholder="Password">
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="register.password2" placeholder="Repeat Password">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="register.address" placeholder="Address">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="register.city" placeholder="City">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="register.postcode" placeholder="Pincode">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Register</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

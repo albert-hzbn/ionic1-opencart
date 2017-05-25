@@ -1,0 +1,45 @@
+<ion-view view-title="{{arrCategories.name}}">
+    <ion-nav-title>
+        <span>FYNkart</span>
+        <a href="#/app/cart"><i class="fa fa-shopping-cart"></i><sup class="cart-quantity">{{cartQuantity}}</sup></a>
+    </ion-nav-title>
+    <ion-content lazy-scroll>
+        <div ng-if="arrSubCategories.length>0">
+            <div class="heading-categories">Categories</div>
+            <div class="row">
+                <div class="col col-50 categories button" ng-repeat="subCategory in arrSubCategories" ng-click="subCategories(subCategory)">{{subCategory.name}}</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div ng-if="arrProducts.length>0">
+            <div class="heading-products">Products</div>
+            <div class="row">
+                <ion-item class="product" ng-repeat="product in arrProducts" ng-click="fproduct(product)">
+                    <div class="category-product-name">{{product.name}}</div>
+                    <div class="row">
+                        <div class="col col-50">
+                            <img src="img/ripple.gif" image-lazy-src="http://fynkart.com/image/{{ product.image }}" image-lazy-loader="android" image-lazy-distance-from-bottom-to-load="-100" class="category-product-image" width="150" height="150">
+                        </div>
+                        <div class="col col-50">
+                            <div class="category-product-price" ng-if="product.price!=product.dprice">
+                                <strike>&#8377;{{product.price| number : 2}}</strike>
+                            </div>
+                            <div class="category-product-dprice">
+                                Price:&#8377;{{product.dprice| number : 2}}
+                            </div>
+
+                            <button class="button button-balanced btn-cart" ng-click="addToCart(product)"><span>Add to cart</span></button>
+                        </div>
+
+                    </div>
+                </ion-item>
+            </div>
+        </div>
+
+        <div ng-if="arrSubCategories.length==0 && arrProducts.length==0">
+            More products comming soon
+        </div>
+    </ion-content>
+</ion-view>

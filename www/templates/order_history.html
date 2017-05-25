@@ -1,0 +1,28 @@
+<ion-view view-title="Order History">
+    <ion-nav-title>
+        <span>FYNkart</span>
+        <a href="#/app/cart"><i class="fa fa-shopping-cart"></i><sup class="cart-quantity">{{cartQuantity}}</sup></a>
+    </ion-nav-title>
+    <ion-content>
+
+        <hr>
+        <div class="order-history-header">Order History</div>
+        <table>
+            <thead class="order-history-heading">
+                <tr>
+                    <td>Order Id</td>
+                    <td>Date</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr href="#/app/order_history_details" class="order-history-details" ng-repeat="item in orderHistoryList" ng-click="orderHistoryDetails(item)">
+                    <td>{{item.order_id}}</td>
+                    <td>{{item.date_added}}</td>
+                    <td>&#8377; {{item.total | number : 2}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </ion-content>
+</ion-view>

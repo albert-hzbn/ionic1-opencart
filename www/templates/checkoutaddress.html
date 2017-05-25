@@ -1,0 +1,45 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Address</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div>Select Address</div>
+        <form ng-submit="selectedaddress(addresschoosen)">
+            <div ng-repeat="address in customeraddress">
+                <div class="row">
+                    <div class="col col-80">
+                        {{address.firstname}} {{address.lastname}}<br> {{address.address_1}} {{address.address_2}}<br> {{address.city}} {{address.postcode}}
+                    </div>
+                    <div class="col col-20">
+                        <input type="radio" name="address" ng-model="$parent.addresschoosen" ng-value="address">
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <ion-radio name="address" ng-model="addresschoosen" value="addresschoosen">Enter new address</ion-radio>
+
+            <div ng-show="addresschoosen">
+                <div class="list">
+                    <label class="item item-input">First Name</label>
+                    <input type="text" ng-model="addresschoosen.firstname">
+                    <label class="item item-input">Lastname Name</label>
+                    <input type="text" ng-model="addresschoosen.lastname">
+                    <label class="item item-input">Address 1</label>
+                    <input type="text" ng-model="addresschoosen.address_1">
+                    <label class="item item-input">Address 2</label>
+                    <input type="text" ng-model="addresschoosen.addreas_2">
+                    <label class="item item-input">City</label>
+                    <input type="text" ng-model="addresschoosen.city">
+                    <label class="item item-input">Pincode</label>
+                    <input type="text" ng-model="addresschoosen.postcode">
+                </div>
+            </div>
+-->
+            <label class="item">
+          <button class="button button-block button-positive" type="submit">Place Order</button>
+        </label>
+        </form>
+</ion-modal-view>
+</ion-content>
+</ion-modal-view>
