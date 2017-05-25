@@ -1,4 +1,4 @@
-Ionic 1  app for opencart 2.3.0.2
+#Ionic 1  app for opencart 2.3.0.2
 
 Follow these steps:
 1. Download the files
